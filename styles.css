@@ -27,6 +27,29 @@ input[type="color"], input[type="text"] {
     border-radius: 4px;
 }
 
+input[type="color"] {
+    padding: 5px;
+    background-color: #fff;
+    height: 40px; /* Increase the height for better visibility */
+    cursor: pointer;
+    -webkit-appearance: none; /* Remove default styling */
+    appearance: none; /* Remove default styling */
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+    border-radius: 4px;
+}
+
+input[type="color"]::-moz-color-swatch {
+    border: none;
+    border-radius: 4px;
+}
+
 button {
     display: block;
     margin-top: 20px;
@@ -152,7 +175,27 @@ button:hover {
     background-color: #0056b3;
 }
 
-/* Add this to your styles.css */
+footer {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
 .tabs {
     margin-top: 10px;
 }
@@ -180,29 +223,4 @@ button:hover {
     background-color: #f9f9f9;
     border: 1px solid #ccc;
     margin-top: 10px;
-}
-
-.copy-button {
-    margin-top: 10px;
-}
-
-footer {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 14px;
-    text-decoration: none;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
 }

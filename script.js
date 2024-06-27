@@ -415,3 +415,8 @@ function showModal() {
 function closeModal() {
     document.getElementById('modal').style.display = 'none';
 }
+
+// Theme Toggle
+document.getElementById('theme-toggle').addEventListener('change', function() {
+    document.body.classList.toggle('dark-mode', this.checked);
+});
